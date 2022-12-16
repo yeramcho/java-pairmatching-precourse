@@ -23,6 +23,7 @@ public class PairMatchingController {
 
     private void determineFunction(String function) {
         if (function.equals(Function.PAIR_MATCHING.getFunction())) {
+            OutputView.showAllInfos();
             pairMatcher.pairMatch();
             return;
         }
