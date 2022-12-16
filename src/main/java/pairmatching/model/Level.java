@@ -1,5 +1,9 @@
 package pairmatching.model;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public enum Level {
     LEVEL1("레벨1"),
     LEVEL2("레벨2"),
@@ -15,5 +19,11 @@ public enum Level {
 
     public String getName() {
         return this.name;
+    }
+
+    public List<Mission> getMission() {
+        return Arrays.stream(Mission.values())
+                .filter(m -> m.getLevel().equals(this))
+                .collect(Collectors.toList());
     }
 }

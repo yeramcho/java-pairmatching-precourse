@@ -1,5 +1,7 @@
 package pairmatching.model;
 
+import java.util.Arrays;
+
 public enum Mission {
     CAR_RACE(Level.LEVEL1, "자동차경주"),
     LOTTO(Level.LEVEL1, "로또"),
@@ -18,7 +20,12 @@ public enum Mission {
         this.name = name;
     }
 
+    public Level getLevel() {
+        return this.level;
+    }
+
     public String getName() {
         return this.name;
     }
+
 }
