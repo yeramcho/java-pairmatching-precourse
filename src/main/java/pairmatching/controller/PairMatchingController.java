@@ -17,6 +17,13 @@ public class PairMatchingController {
         do {
             OutputView.selectFunction();
             function = InputView.readFunction();
+            determineFunction(function);
         } while (!function.equals(Function.QUIT.getFunction()));
+    }
+
+    private void determineFunction(String function) {
+        if (function.equals(Function.PAIR_MATCHING.getFunction())) {
+            pairMatcher.pairMatch();
+        }
     }
 }
