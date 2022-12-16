@@ -24,6 +24,11 @@ public class PairMatchingController {
     private void determineFunction(String function) {
         if (function.equals(Function.PAIR_MATCHING.getFunction())) {
             pairMatcher.pairMatch();
+            return;
+        }
+        if (function.equals(Function.PAIR_CHECK.getFunction())) {
+            pairMatcher.pairCheck();
+            return;
         }
     }
 }
