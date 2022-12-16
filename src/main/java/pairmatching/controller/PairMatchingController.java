@@ -32,7 +32,6 @@ public class PairMatchingController {
         }
         if (function.equals(Function.PAIR_INIT.getFunction())) {
             pairMatcher.pairInit();
-            return;
         }
     }
 }
