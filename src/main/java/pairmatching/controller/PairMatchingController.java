@@ -1,5 +1,6 @@
 package pairmatching.controller;
 
+import pairmatching.model.Function;
 import pairmatching.model.PairMatcher;
 import pairmatching.view.InputView;
 import pairmatching.view.OutputView;
@@ -12,7 +13,10 @@ public class PairMatchingController {
     }
 
     public void run() {
-        OutputView.selectFunction();
-        String input = InputView.readFunction();
+        String function;
+        do {
+            OutputView.selectFunction();
+            function = InputView.readFunction();
+        } while (!function.equals(Function.QUIT.getFunction()));
     }
 }
