@@ -30,5 +30,9 @@ public class PairMatchingController {
             pairMatcher.pairCheck();
             return;
         }
+        if (function.equals(Function.PAIR_INIT.getFunction())) {
+            pairMatcher.pairInit();
+            return;
+        }
     }
 }

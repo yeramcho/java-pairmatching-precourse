@@ -6,4 +6,7 @@ public class PairMatcher {
 
     public void pairCheck() {
     }
+
+    public void pairInit() {
+    }
 }
