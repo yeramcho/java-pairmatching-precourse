@@ -5,4 +5,8 @@ public class OutputView {
         System.out.println(ProgramMessage.SELECT_FUNCTION.getMessage());
         System.out.println(ProgramMessage.OPTIONS.getMessage());
     }
+
+    public static void showAllInfos() {
+
+    }
 }

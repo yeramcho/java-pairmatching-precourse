@@ -12,10 +12,12 @@ public enum Mission {
 
     private Level level;
     private String name;
+
     Mission(Level level, String name) {
         this.level = level;
         this.name = name;
     }
+
     public String getName() {
         return this.name;
     }

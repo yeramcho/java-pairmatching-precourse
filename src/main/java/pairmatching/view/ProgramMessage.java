@@ -8,9 +8,11 @@ public enum ProgramMessage {
             "Q. 종료");
 
     private final String message;
+
     ProgramMessage(String message) {
         this.message = message;
     }
+
     public String getMessage() {
         return this.message;
     }
